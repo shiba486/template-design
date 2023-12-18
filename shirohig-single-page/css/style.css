@@ -1,0 +1,478 @@
+/* RESET start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/Nohemi-Medium-BF6438cc5883899.ttf);
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Nohemi';
+    src: url(../fonts/Nohemi-Regular-BF6438cc4d0e493.ttf);
+}
+@font-face {
+    font-family: 'General Sans';
+    src: url(../fonts/GeneralSans-Regular.ttf);
+    font-weight: normal;
+}
+:root{
+    --White: #FFF;
+    --Purple: #8f2ceb;
+    --Black: #242231;
+    --Grey: #4F4E55;
+    --General-sans-sarif: 'General Sans', sans-serif;
+    --Nohemi: 'Nohemi', serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.5rem;
+    font-family: var(--General-sans-sarif);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--Nohemi);
+}
+a{
+    text-decoration: none;
+}
+main.wrapper{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 120rem;
+    height: auto;
+    margin: 0 auto;
+}
+/* _______________________________________________________ RESET style End +____________________________________________________ */
+
+/* Header-Section Start */
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.brand a{
+    font-size: 2.5rem;
+    font-family: var(--General-sans-sarif);
+    font-weight: bold;
+    color: var(--Purple);
+}
+.navbar-nav ul{
+    list-style: none;
+}
+.navbar-nav ul li{
+    display: inline-block;
+}
+.navbar-nav ul li a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: var(--Black, #111018);
+    font-family: var(---General-sans-sarif);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+}
+.navbar-btn a{
+    display: inline-block;
+    color: var(--Black, #111018);
+    font-family: var(--General-sans-sarif);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+    margin-right: 1rem;
+}
+.btn{
+    background-color: var(--Purple);
+    color: var(--White) !important;
+    padding: 1.6rem 5rem;
+    border-radius: 5rem;
+    font-size: 1.8rem;
+    border: none;
+}
+.btn-outline{
+    color: var(--Purple) !important;
+    background-color: var(--White) !important;
+    padding: 1.6rem 5rem;
+    border-radius: 5rem;
+    border: 1px solid var(--Purple);
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+/* _______________________________________________________+ Header-Section style End +____________________________________________________ */
+
+/* Hero Section Start */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+.hero-section span {
+    position: relative;
+    top: 15.6rem;
+    left: .5rem;
+}
+.hero-left{
+    width: 60%;
+    padding: 8rem 0;
+}
+.hero-left h1{
+    color: var(--Black, #111018);
+    font-family: Nohemi;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 7.8rem;
+    letter-spacing: .03rem;
+}
+.hero-btn-group{
+    padding: 3rem 0;
+}
+.hero-right{
+    width: 40%;
+}
+.hero-right img{
+    max-width: 100%;
+}
+.happy-client {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-top: -5rem;
+}
+.happy-client div {
+    margin-left: 1.5rem;
+}
+/* _______________________________________________________+ Courses style End +____________________________________________________ */
+
+/* Features-Section Start */
+.features {
+    text-align: center;
+    margin: 10rem 0;
+}
+.features img{
+    position: absolute;
+    left: 0;
+}
+.features-group{
+    display: flex;
+    column-gap: 3rem;
+    margin-top: 5rem;
+}
+.sub-title{
+    color: var(--Purple, #9333EA);
+    text-align: center;
+    font-family: Nohemi;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.title{
+    color: var(--Black, #111018);
+    text-align: center;
+    font-family: Nohemi;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5.4rem; 
+    letter-spacing: 0.03rem;
+}
+.lead{
+    color: var(--Grey, #4F4E55);
+    font-family: General Sans;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; 
+    letter-spacing: .03rem;
+}
+.features-item span{
+    border-radius: .8rem;
+    color: var(--White);
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 1rem 0;
+}
+.features-item{
+    width: 30%;
+    height: auto;
+    border-radius: 0 0 .8rem .8rem;
+    background: var(--White, #FFF);
+    box-shadow: 0 2.4rem 2.4rem 0 rgba(79, 78, 85, 0.10);
+    display: flex;
+    padding: 1rem -1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.f-one{
+    border-top: .5rem solid #9333EA;
+}
+.f-one span{
+    background-color: #9333EA;
+}
+.f-two{
+    border-top: .5rem solid #FF0069;
+}
+.f-two span{
+    background-color: #FF0069;
+}
+.f-three{
+    border-top: .5rem solid #FFA800;
+}
+.f-three span{
+    background-color: #FFA800;
+}
+.f-four{
+    border-top: .5rem solid #00FF47;
+}
+.f-four span{
+    background-color: #00FF47;
+}
+.f-one-span{
+    background-color: #9333EA;
+}
+.f-two-span{
+    background-color: #FF0069;
+}
+.f-three-span{
+    background-color: #FFA800;
+}
+.f-four-span{
+    background-color: #00FF47;
+}
+.f-five-span{
+    background-color: #0f0f0f;
+}
+.features-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+/* _______________________________________________________+ Features-Section style End +____________________________________________________ */
+
+/* About section style start  */
+.about{
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+}
+.about-img{
+    width: 40%;
+}
+.about-img img{
+    max-width: 100%;
+}
+.about-text{
+    width: 60%;
+    padding-right: 3rem;
+}
+.about-text h4{
+    text-align: left;
+}
+.about-text h2{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.about-text p{
+    margin-bottom: 2rem;
+}
+.about span {
+    position: absolute;
+    right: 0;
+    margin-top: 52.5rem;
+}
+/* _______________________________________________________+ About Section style End +____________________________________________________ */
+/* Courses style start  */
+.courses{
+    margin: 8rem 0;
+}
+.courses > p{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.course-filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 4rem 0;
+}
+.filter-item{
+    margin-right: 3rem;
+}
+.filter-item p{
+    display: inline-block;
+}
+.filter-item span{
+    margin-right: .5rem;
+    padding: 1rem;
+    border-radius: .6rem;
+    font-size: 1.8rem;
+    color: var(--White);
+}
+.courses-group{
+    display: flex;
+    column-gap: 3rem;
+}
+.courses-item{
+    width: 33%;
+    border-radius: .8rem;
+    background: var(--White, #FFF);
+    box-shadow: 0 2.4rem 3.4rem 0 rgba(79, 78, 85, 0.10);    
+    padding: 2rem;
+}
+.label{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    color: var(--White);
+}
+.h4 {
+    color: var(--Black, #111018);
+    font-family: Nohemi;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2.4rem;
+    letter-spacing: 0.03rem;
+    text-align: left;
+    margin: 1rem 0;
+}
+/* _______________________________________________________ Courses style End +____________________________________________________ */
+
+/* Slider Style Start  */
+.slider{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    position: relative;
+}
+.slider span{
+    font-size: 5rem;
+    color: #929292;
+    cursor: pointer;
+}
+.arrow-left{
+    position: absolute;
+    left: -3rem;
+    top: 20rem;
+}
+.arrow-right{
+    position: absolute;
+    right: -3rem;
+    top: 20rem;
+}
+.slider-item{
+    width: 33%;
+    fill: #FFF;
+    filter: drop-shadow(-1rem 1rem 3.4rem rgba(79, 78, 85, 0.10));
+    position: relative;
+    margin-top: 5rem;
+}
+.slider-item img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.slider-item-content{
+    width: 100%;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    text-align: center;
+    padding: 0 6rem;
+}
+.slider-item-content span{
+    color: var(--Purple);
+    font-size: 1.8rem;
+}
+.slider-item-active {
+    margin-top: -4rem;
+}
+.bg-shape-left{
+    position: absolute;
+    left: 0;
+}
+.bg-shape-right{
+    position: absolute;
+    right: 0;
+}
+.testimonials {
+    margin: 11rem 0;
+}
+/* _______________________________________________________ Slider style End +____________________________________________________ */
+
+/* Footer Stye Start  */
+footer{
+    background: #1F2937;
+    padding: 1rem 0;
+    position: relative;
+}
+.footer{
+    display: flex;
+    column-gap: 30px;
+    padding: 5rem 0 4rem 0;
+
+}
+.footer-col{
+    width: 20%;
+}
+.footer-col h4, .footer-col p, .brand-footer{
+    color: rgb(243, 243, 243);
+    font-weight: normal;
+}
+.footer-col h4{
+    padding: 1rem 0;
+}
+.footer-col p {
+    line-height: 2.5rem;
+    font-family: 'General Sans';
+}
+.brand-footer{
+    width: 40%;
+}
+.brand-footer h2{
+    padding: 1rem 0;
+    font-family: var(--General-sans-sarif);
+}
+.copyright p{
+    color: var(--White);
+    padding: 1.6rem 0;
+    text-align: center;
+}
+.f-bg-top {
+    position: absolute;
+    top: -0.5rem;
+    left: 35.2rem;
+}
+.f-bg-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.f-bg-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* _______________________________________________________+ Footer style End +____________________________________________________ */
