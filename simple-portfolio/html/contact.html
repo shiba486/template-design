@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+      <!--................................navigation bar start here....................................-->
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <h1>Shibanondo</h1>
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+
+                <li class="services">
+                    <a href="/">Services</a>
+
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="project.html">project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <!--.................................................................navigation end here.........................-->
+
+
+  
+        <!--................................contact page start here..............................-->
+        <div class="contact">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+            <div class="contact-form">
+                <form action="" method="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <footer>
+                &copy; 2023 Shibanondo Das
+            </footer>
+
+        </div>
+        <!--...................................................................contact page end here....................................-->
+
+
+
+</body>
+</html>
