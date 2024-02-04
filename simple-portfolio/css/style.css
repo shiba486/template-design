@@ -1,0 +1,378 @@
+/* ..............................................COMMON CSS START............................. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+h1{
+  margin: 0;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+img {
+
+  width: 200px;
+  
+  height: 100px;
+  
+  }
+
+  
+/* Style the logo */
+.logo {
+  /* background-color: #ff5733; */ /* Adjust the color as desired */
+  color: #fff; /* Text color */
+  font-family: 'Arial', sans-serif; /* Choose a suitable font */
+  font-size: 0em; /* Adjust the font size as needed */
+  text-align: center;
+  padding: -1em;
+  text-transform: uppercase; /* Convert text to uppercase */
+  cursor: pointer;
+}
+
+/* ..............................................COMMON CSS END............................. */
+
+/*.................................................. NAVBAR STYLING STARTS ..........................*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(19 17 25);
+  color: #fff;
+}
+
+.portfolioSection {
+  margin-top: 4px;
+}
+.nav-links a {
+  color: #fff;
+}
+
+
+/* LOGO */
+.logo {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(15, 1, 139);
+  padding: 1em 0;
+  position: absolute;
+  /*ACCORDING TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li+li {
+  margin-top: 10px;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES FOR NAVIGATION BAR START HERE*/
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(9, 0, 128);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #211668;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #44358f;
+  }
+}
+
+/* APPLYING MEDIA QUERIES FOR NAVIGATION BAR END HERE*/
+
+/*............................................. NAVBAR STYLING END ......................................................*/
+
+
+
+
+
+
+/*............................................. CONTACT STYLING START ......................................................*/
+/* Style the header */
+header {
+  background-color: #a07171;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 6px -1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 30px;
+  object-fit: cover;
+  margin-top: 8px 0px;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* APPLYING MEDIA QUERIES FOR CONTACT START HERE*/
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* APPLYING MEDIA QUERIES FOR CONTACT END HERE*/
+/*............................................. CONTACT STYLING END ......................................................*/
+
+
+
+
+
+/*............................................. PORTFOLIO STYLING START ......................................................*/
+
+
+/* Style the portfolio section */
+.portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+/* Style individual project items */
+.project {
+  width: 300px;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style project titles */
+.project h2 {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
+/* Style project descriptions */
+.project p {
+  font-size: 1em;
+}
+
+
+/* APPLYING MEDIA QUERIES FOR PORTFOLIO START HERE*/
+@media (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+/* APPLYING MEDIA QUERIES FOR PORTFOLIO END HERE*/
+/*............................................. PORTFOLIO STYLING END ......................................................*/
+
+
+
+
+
+/*............................................. ABOUTSECTION STYLING START ......................................................*/
+
+
+/* Style the about section */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.about-image {
+  margin-top: 2em;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* APPLYING MEDIA QUERIES FOR ABOUT START HERE*/
+@media (max-width: 768px) {
+  .about {
+    padding: 2em 1em;
+  }
+
+  .about-content {
+    text-align: left;
+    padding: 0;
+  }
+
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+
+  .about-image {
+    margin-top: 1em;
+  }
+}
+
+/* APPLYING MEDIA QUERIES FOR ABOUT END HERE*/
+/*............................................. PORTFOLIO STYLING END ......................................................*/
+
+
+
+
